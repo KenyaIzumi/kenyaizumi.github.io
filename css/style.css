@@ -303,7 +303,7 @@ section {
 }
 
 .text-left{
-	width: 980px;
+	width: 100%;
 	text-align:left;
 	margin:2% auto;
 	vertical-align: 0%
