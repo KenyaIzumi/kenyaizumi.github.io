@@ -200,11 +200,11 @@ td {
 	color:#fff;
 	text-decoration:none;
 	border-radius:5px;
-	background:#1b1b1b url('../images/bg_arrow_white.png') 20px 50% no-repeat;
+	background:#1b1b1b url('../img/bg_arrow_white.png') 20px 50% no-repeat;
 	transition:all 0.2s ease 0s;
 }
 .btn01 a:hover {
-	background:#2e2e2e url('../images/bg_arrow_white.png') 20px 50% no-repeat;
+	background:#2e2e2e url('../img/bg_arrow_white.png') 20px 50% no-repeat;
 	transition:all 0.2s ease 0s;
 }
 
