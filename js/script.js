@@ -8,3 +8,9 @@ $(function() {
 	var navHeight = $('nav').outerHeight(true);
 	$('header').css({'margin-top':navHeight + headerMarginTop});
 });
+
+$(function(){
+	$('#garally').click(function(){
+		$('.font').slideToggle();
+	});
+});

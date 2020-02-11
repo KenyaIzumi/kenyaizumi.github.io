@@ -286,6 +286,11 @@ nav li a:hover {
 	text-decoration:underline;;
 }
 
+nav .font {
+	display: none;
+	font-size: 12px;
+}
+
 /*================================================
  *  メイン
  ================================================*/
@@ -397,6 +402,7 @@ footer {
 @media screen and (max-width:767px) {
 	h2 {
 		margin-top:50px;
+		/* margin-top:148px; */
 	}
 
 	.imgC {
