@@ -250,6 +250,11 @@ header h1 {
 	width: 90%;
 	margin: 5% auto;
 }
+
+.about-header {
+	width: 90%;
+	margin: 5% auto;
+}
 /*================================================
  *  グローバルナビゲーション
  ================================================*/
@@ -341,6 +346,18 @@ section {
 }
 
 .top-img img {
+	width:100%;
+}
+
+.about-img {
+	width:80%;
+	margin: 0 auto;
+	padding:0;
+	background-color:#fff;
+	background-repeat:no-repeat;
+}
+
+.about-img img {
 	width:100%;
 }
 
