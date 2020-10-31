@@ -497,6 +497,10 @@ footer {
 		transform:scale(0.8);
 		font-size:10px;
 	}
+	.e-mail-wrapper {
+		margin-top: 4%;
+		margin-bottom: 50vh;
+	}
 }
 
 @media screen and (max-width:345px) {
