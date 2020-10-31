@@ -368,6 +368,14 @@ section {
 .contact-wrapper {
 	margin-top: 7%;
 }
+.contact {
+	width: 90%;
+	margin: 5% auto;
+}
+.e-mail-wrapper {
+	margin-top: 10%;
+	margin-bottom: 30%;
+}
 /*================================================
  *  フッター
  ================================================*/
