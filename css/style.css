@@ -39,6 +39,10 @@ h2 {
 	text-align:center;
 }
 
+#contact-head {
+	margin-bottom:15px;
+}
+
 p {
 	margin:0 0 1em 0;
 }
@@ -373,8 +377,8 @@ section {
 	margin: 5% auto;
 }
 .e-mail-wrapper {
-	margin-top: 10%;
-	margin-bottom: 30%;
+	margin-top: 4%;
+	margin-bottom: 20%;
 }
 /*================================================
  *  フッター
@@ -477,5 +481,16 @@ footer {
 	.threeColInner div {
 		float:none;
 		width:100%;
+	}
+	nav li {
+		position:relative;
+		left:-50%;
+		float:left;
+		list-style:none;
+		margin:0;
+		padding:0 8px;
+	}
+	.contact-text p{
+		font-size: 11px;
 	}
 }
