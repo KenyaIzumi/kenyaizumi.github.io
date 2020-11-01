@@ -4,13 +4,13 @@
 
 =================================================================== */
 $(function() {
-	var headerMarginTop = parseInt($('header').css('margin-top'), 10);
-	var navHeight = $('nav').outerHeight(true);
-	$('header').css({'margin-top':navHeight + headerMarginTop});
+    var headerMarginTop = parseInt($('header').css('margin-top'), 10);
+    var navHeight = $('nav').outerHeight(true);
+    $('header').css({ 'margin-top': navHeight + headerMarginTop });
 });
 
-$(function(){
-	$('#garally').click(function(){
-		$('.font').slideToggle();
-	});
+$(function() {
+    $('#garally').click(function() {
+        $('.font').slideToggle();
+    });
 });
