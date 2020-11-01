@@ -375,6 +375,7 @@ section {
 .contact {
 	width: 90%;
 	margin: 5% auto;
+	margin-top:100px;
 }
 .e-mail-wrapper {
 	margin-top: 4%;
@@ -491,7 +492,7 @@ footer {
 		padding:0 8px;
 	}
 	.contact-text p{
-		font-size: 11px;
+		font-size: 13px;
 	}
 	.footer-wrapper{
 		transform:scale(0.8);
