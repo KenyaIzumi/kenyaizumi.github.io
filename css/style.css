@@ -442,12 +442,7 @@ header h1 {
     z-index: 10;
 }
 
-.top-header {
-    width: 90%;
-    margin: 5% auto;
-}
-
-.about-header {
+.content-wrapper {
     width: 90%;
     margin: 5% auto;
 }
@@ -529,7 +524,7 @@ section {
     font-size: 20px;
 }
 
-.top-header>p.text-left {
+.content-wrapper>p.text-left {
     margin: 60px auto 0;
 }
 
@@ -583,7 +578,6 @@ section {
 
 .e-mail-wrapper {
     margin-top: 4%;
-    margin-bottom: 60vh;
 }
 
 
@@ -704,16 +698,12 @@ footer {
         margin: 0;
         padding: 0 8px;
     }
-    .contact-text p {
-        font-size: 13px;
-    }
     .footer-wrapper {
         transform: scale(0.8);
         font-size: 10px;
     }
     .e-mail-wrapper {
         margin-top: 4%;
-        margin-bottom: 50vh;
     }
 }
 
