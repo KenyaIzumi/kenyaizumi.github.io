@@ -550,7 +550,7 @@ section {
     width: 100%;
 }
 
-.about-img {
+.contents-img {
     width: 80%;
     margin: 0 auto;
     padding: 0;
@@ -558,7 +558,7 @@ section {
     background-repeat: no-repeat;
 }
 
-.about-img img {
+.contents-img img {
     width: 100%;
 }
 
