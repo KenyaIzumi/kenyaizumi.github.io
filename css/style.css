@@ -172,9 +172,17 @@ header {
     width: 100%;
 }
 
+#wrapper {
+    width: 100%;
+    position: relative;
+    min-height: 100%;
+    margin-top: 60px;
+}
+
 #contents {
     width: 980px;
     margin: 0 auto;
+    padding-bottom: 30px;
 }
 
 a {
@@ -186,7 +194,6 @@ a:hover {
 }
 
 h2 {
-    margin-top: 50px;
     margin-bottom: 30px;
     font-size: 24px;
     color: #333;
@@ -445,7 +452,7 @@ header h1 {
 
 .content-wrapper {
     width: 90%;
-    margin: 5% auto;
+    margin: 0 auto;
 }
 
 
@@ -525,10 +532,6 @@ section {
     font-size: 20px;
 }
 
-.content-wrapper>p.text-left {
-    margin: 60px auto 0;
-}
-
 .text-left h2 {
     font-size: 30px;
     text-align: left;
@@ -564,7 +567,7 @@ section {
 }
 
 #contents .information {
-    margin: 10% auto;
+    margin: 0 auto;
 }
 
 .contact-wrapper {
@@ -634,7 +637,7 @@ footer {
     #contents {
         box-sizing: border-box;
         width: 100%;
-        padding: 0 10px;
+        padding: 0 0 10px;
     }
 }
 
@@ -644,10 +647,6 @@ footer {
  ================================================*/
 
 @media screen and (max-width:767px) {
-    h2 {
-        margin-top: 50px;
-        /* margin-top:148px; */
-    }
     .imgC {
         margin-bottom: 30px;
     }
@@ -698,6 +697,9 @@ footer {
         list-style: none;
         margin: 0;
         padding: 0 8px;
+    }
+    .text-left p {
+        font-size: 18px;
     }
     footer {
         position: absolute;
