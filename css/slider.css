@@ -1,0 +1,255 @@
+@charset "UTF-8";
+
+/*================================================
+ *  一般・共通設定
+ ================================================*/
+
+html {
+    height: -webkit-fill-available;
+}
+
+body {
+    font-size: 14px;
+    font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    line-height: 1.6;
+    background-color: #000;
+}
+
+
+/*================================================
+ *  slick
+ ================================================*/
+
+#slider-wrapper {
+    min-height: calc(var(--vh, 1vh) * 90);
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+#slider-contents {
+    height: calc(var(--vh, 1vh) * 90);
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.slider-title {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    height: calc(var(--vh, 1vh) * 5);
+}
+
+.slider-title h2 {
+    line-height: calc(var(--vh, 1vh) * 5);
+}
+
+.slick-carousel-wrapper {
+    height: calc(var(--vh, 1vh) * 80);
+    width: 100%;
+}
+
+.slick-track {
+    display: flex;
+}
+
+.slick-track .slick-slide {
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.slick-carousel img {
+    width: auto;
+    height: calc(var(--vh, 1vh) * 80);
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.slick-carousel img.vertical-image,
+.slick-carousel img.vertical-image-long,
+.slick-carousel img.square-image {
+    width: auto;
+    height: calc(var(--vh, 1vh) * 80);
+}
+
+.slick-carousel img.horizontal-image {
+    width: 95vw;
+    max-width: 980px;
+    height: auto;
+}
+
+.slick-carousel img.horizontal-image-long {
+    width: 95vw;
+    max-width: 980px;
+    height: auto;
+}
+
+.slick-counter {
+    height: 5vh;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.slick-counter>div {
+    width: 33%;
+}
+
+.slick-button-wrapper {
+    text-align: right;
+    padding-right: 10px;
+    color: #fa0061;
+    font-size: 14px;
+}
+
+.slick-button-wrapper a:link {
+    color: #fa0061;
+    text-decoration: none;
+}
+
+
+/*================================================
+ *  グローバルナビゲーション
+ ================================================*/
+
+.slider-header {
+    min-height: calc(var(--vh, 1vh) * 5);
+    width: 100%;
+    line-height: calc(var(--vh, 1vh) * 3);
+    padding: calc(var(--vh, 1vh) * 1) 0;
+    opacity: 0.8;
+    background: #000;
+    z-index: 10;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+}
+
+nav li {
+    list-style: none;
+    width: 20vw;
+    max-width: 95px;
+    margin: 0;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: #dfdfdf;
+    text-decoration: underline;
+}
+
+nav .font {
+    display: none;
+    text-align: left;
+    line-height: 1.6;
+    font-size: 12px;
+}
+
+
+/*================================================
+ *  フッター
+ ================================================*/
+
+.slider-footer {
+    min-height: calc(var(--vh, 1vh) * 4);
+    clear: both;
+    width: 100vw;
+    line-height: calc(var(--vh, 1vh) * 2);
+    padding: calc(var(--vh, 1vh) * 1) 0;
+    font-size: 11px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+}
+
+
+/*================================================
+ *  タブレット向けデザイン
+ ================================================*/
+
+
+/* 共通 */
+
+@media screen and (max-width:979px) {
+    /* .slider-footer {
+        line-height: calc(var(--vh, 1vh) * 3);
+    } */
+}
+
+
+/* 縦向き */
+
+@media screen and (max-width:979px) and (orientation: portrait) {
+    #slider-contents {
+        height: calc(var(--vh, 1vh) * 91);
+    }
+    .slider-title {
+        font-size: 20px;
+    }
+    .slick-carousel img.square-image {
+        width: 95vw;
+        height: auto;
+        max-height: calc(var(--vh, 1vh) * 80);
+    }
+    .footer-wrapper {
+        transform: scale(0.8);
+        font-size: 10px;
+    }
+}
+
+
+/* 横向き */
+
+@media screen and (max-height:420px) and (orientation: landscape) {
+    #slider-contents {
+        height: calc(var(--vh, 1vh) * 91);
+    }
+    .slider-title {
+        font-size: 12px;
+    }
+    .slick-carousel img.horizontal-image,
+    .slick-carousel img.horizontal-image-long {
+        width: auto;
+        max-width: 80vw;
+        height: calc(var(--vh, 1vh) * 80);
+    }
+}
+
+
+/*================================================
+ *  スマートフォン向けデザイン
+ ================================================*/
+
+@media screen and (max-width:767px) {
+    nav li {
+        width: 18vw;
+        max-width: 95px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:345px) {
+    .footer-wrapper {
+        width: 330px;
+        margin: 0 auto;
+        transform: scale(0.8);
+        transform-origin: left;
+        margin-left: 10px;
+        font-size: 10px;
+    }
+}
