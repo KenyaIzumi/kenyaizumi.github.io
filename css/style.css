@@ -591,10 +591,13 @@ section {
 
 footer {
     clear: both;
+    width: 100vw;
     padding: 2% 0;
     font-size: 11px;
     text-align: center;
     background-color: #000;
+    position: absolute;
+    bottom: 0;
 }
 
 .footer-text {
@@ -679,6 +682,10 @@ footer {
     .twoColInner div {
         float: none;
         width: 100%;
+    }
+    .twoColInnerFixed div {
+        width: 48%;
+        float: left;
     }
     .threeCol {
         margin-bottom: 30px;
