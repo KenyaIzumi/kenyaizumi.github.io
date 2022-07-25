@@ -75,19 +75,14 @@ body {
     height: calc(var(--vh, 1vh) * 80);
 }
 
-.slick-carousel img.horizontal-image {
-    width: 95vw;
-    max-width: 980px;
-    height: auto;
-}
-
+.slick-carousel img.horizontal-image,
 .slick-carousel img.horizontal-image-long {
     width: 95vw;
     max-width: 980px;
     height: auto;
 }
 
-.slick-counter {
+.slick-info {
     height: 5vh;
     font-size: 18px;
     text-align: center;
@@ -97,18 +92,18 @@ body {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-.slick-counter>div {
+.slick-info>div {
     width: 33%;
 }
 
-.slick-button-wrapper {
+.slick-button {
     text-align: right;
     padding-right: 10px;
     color: #fa0061;
     font-size: 14px;
 }
 
-.slick-button-wrapper a:link {
+.slick-button a:link {
     color: #fa0061;
     text-decoration: none;
 }
@@ -214,6 +209,13 @@ nav .font {
 
 
 /* 横向き */
+
+@media screen and (max-height:1040px) and (orientation: landscape) {
+    .slick-carousel img.horizontal-image,
+    .slick-carousel img.horizontal-image-long {
+        width: 70vw;
+    }
+}
 
 @media screen and (max-height:420px) and (orientation: landscape) {
     #slider-contents {
